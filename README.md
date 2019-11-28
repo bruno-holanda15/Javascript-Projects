@@ -1,2 +1,2 @@
 # MyFirst-Javascript
-This is a introductory project using Javascript.
+This is an introductory project using Javascript.
