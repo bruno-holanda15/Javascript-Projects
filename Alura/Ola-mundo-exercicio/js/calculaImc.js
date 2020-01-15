@@ -43,10 +43,8 @@ for (let i = 0; i < pacientes.length; i++) {
 
     if(alturaValida  && pesoValido ){
 
-            var imcResultado = ( peso )/(Math.pow( altura ,2));
-
-            
-            tdImc.textContent = imcResultado.toFixed(2);
+        var imc = calculaImc(peso,altura);            
+        tdImc.textContent = imc;
 
     }
 }
@@ -57,3 +55,10 @@ for (let i = 0; i < pacientes.length; i++) {
     // console.log("O IMC é : " + imcResultado);// devolver somente o imc
 
 
+function calculaImc(peso,altura){
+  
+    var imc = 0;
+    imc = peso / ( Math.pow(altura,2));
+    return imc.toFixed(2);
+
+}
