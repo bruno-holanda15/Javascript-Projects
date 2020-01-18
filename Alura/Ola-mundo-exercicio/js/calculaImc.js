@@ -55,6 +55,10 @@ for (let i = 0; i < pacientes.length; i++) {
     // console.log("O IMC é : " + imcResultado);// devolver somente o imc
 
 
+function validaPeso(){
+   
+}
+
 function calculaImc(peso,altura){
   
     var imc = 0;
