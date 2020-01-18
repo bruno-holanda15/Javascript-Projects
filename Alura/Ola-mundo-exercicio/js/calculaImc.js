@@ -8,9 +8,9 @@ titulo.textContent = "Banana é muito bom";
 
 
 var pacientes = document.querySelectorAll(".paciente");// querySelectorAll seleciona todas as tags com classe paciente e joga em um array
-console.log(pacientes);
 
-for (let i = 0; i < pacientes.length; i++) {
+
+for (let i = 0; i < pacientes.length; i++) {    
 
     var paciente = pacientes[i];    
 
@@ -41,7 +41,7 @@ for (let i = 0; i < pacientes.length; i++) {
 
     }
 
-    if(alturaValida  && pesoValido ){
+    if( alturaValida  && pesoValido ){
 
         var imc = calculaImc(peso,altura);            
         tdImc.textContent = imc;
