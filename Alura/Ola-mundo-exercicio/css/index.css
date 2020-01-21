@@ -137,3 +137,10 @@ button[disabled=disabled], button:disabled {
 	background-color: lightcoral;
 	color: white;
 }
+
+.fadeOut{
+	
+	opacity: 0;
+	transition: 1.0s;
+
+}
