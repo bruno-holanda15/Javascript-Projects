@@ -55,6 +55,9 @@ class NegociacaoController{
 
         console.log(negociacao);
 
+        let exibeData = negociacao.data.getDate() + '/' + (negociacao.data.getMonth() + 1) + '/' + negociacao.data.getFullYear() ;
+        console.log(exibeData);
+
     }
 
 }
