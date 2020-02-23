@@ -39,14 +39,9 @@ class NegociacaoController{
         //     console.log(data);
 
         // Forma resumida , arrow function
-        let data = new Date(...
-            this._inputData.value
-            .split('-')
-            .map( (item , indice) => {
-                return item - indice % 2;
-            })
-        );
-        
+        let helper = new DateHelper();
+        let data = helper.textoParaData(this._inputData.value);
+
         let negociacao = new Negociacao(
             data,
             this._inputQuantidade.value,
@@ -54,9 +49,7 @@ class NegociacaoController{
         )
 
         console.log(negociacao);
-
-        let exibeData = negociacao.data.getDate() + '/' + (negociacao.data.getMonth() + 1) + '/' + negociacao.data.getFullYear() ;
-        console.log(exibeData);
+        console.log(helper.dataParaTexto(negociacao.data));
 
     }
 
